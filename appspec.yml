@@ -3,16 +3,3 @@ os: linux
 files:
   - source: /
     destination: /home/pavel.utin
-hooks:
-  ApplicationStop:
-    - location: 
-      timeout: 
-      runas: root
-  AfterInstall:
-    - location: 
-      timeout: 
-      runas: root
-  ApplicationStart:
-    - location: scripts/sendemail
-      timeout: 600
-      runas: root
